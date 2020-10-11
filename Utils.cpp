@@ -4,9 +4,9 @@
 #include "ui_utils.h"
 #endif
 
-Utils::Utils(QWidget *parent): QWidget(parent), 
+Utils::Utils(QWidget *parent): QWidget(parent)
 #ifdef UTILS_LOADABLE
-ui(new Ui::Utils)
+,ui(new Ui::Utils)
 #endif
 {
 #ifdef UTILS_LOADABLE
